@@ -18,8 +18,7 @@
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js')
-const { conn, Country } = require('./src/db.js')
-const fetch = require('node-fetch')
+const { conn } = require('./src/db.js')
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {

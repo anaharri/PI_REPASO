@@ -1,10 +1,10 @@
-#Repaso PI
+# Repaso PI
 
-##Objetivos del Proyecto
+## Objetivos del Proyecto
 
--Construir una App utlizando React, Redux, Node y Sequelize.
+- Construir una App utlizando React, Redux, Node y Sequelize.
 
-##Comenzando
+## Comenzando
 
 1. Forkear el repositorio para tener una copia del mismo en sus cuentas
 2. Clonar el repositorio en sus computadoras para comenzar a trabajar
@@ -23,7 +23,7 @@ node -v
 npm -v
 ```
 
-##BoilerPlate
+## BoilerPlate
 El boilerplate cuenta con dos carpetas: `api` y `client`. En estas carpetas estará el código del back-end y el front-end respectivamente.
 
 En `api` crear un archivo llamado: `.env` que tenga la siguiente forma:
@@ -40,36 +40,36 @@ Adicionalmente será necesario que creen desde psql una base de datos.
 
 El contenido de `client` fue creado usando: Create React App.
 
-##Enunciado
+## Enunciado
 
-#Redux BLOG APP
+# Redux BLOG APP
 En este ejercicio vamos a crear una APP que utilice la API de [JSONPlaceholder](https://jsonplaceholder.typicode.com/). Vamos a crear nuestra app utilizando **REACT** y **REDUX**.
 
 Con tu App podremos:
 
--Listar los post del Blog: En la pàgina principal, mostrar solo: -id y -title de los post
--Al hacer click en cada post: mostrar -body y las categorias asociadas al post.
--Se debe poder agregar nuevas categorìas a cada post
+- Listar los post del Blog: En la pàgina principal, mostrar solo: -id y -title de los post
+- Al hacer click en cada post: mostrar -body y las categorias asociadas al post.
+- Se debe poder agregar nuevas categorìas a cada post
 
-###Backend
+### Backend
 El backend tendrá los siquientes modelos:
 
 Post:
 
--id
--title
--body
+- id
+- title
+- body
 
 Category:
 
--id
--name
+- id
+- name
 
 User:
 
--id
--name
--username
--email
+- id
+- name
+- username
+- email
 
 La relación de usuario con post es de 1 a n: ya que un mismo usuario puede escribir varios post. La relación de post con categorías es de n a n, ya que un post puede tener varias categorías asociadas y las categorías pueden ser compartidas por varios posts.
